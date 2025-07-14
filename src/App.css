@@ -1,0 +1,51 @@
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+.hive-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hive-bg-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(120deg, rgba(255,107,53,0.06) 0 2px, transparent 2px 60px),
+              repeating-linear-gradient(60deg, rgba(255,107,53,0.06) 0 2px, transparent 2px 60px),
+              repeating-linear-gradient(0deg, rgba(255,107,53,0.04) 0 2px, transparent 2px 60px);
+  animation: hiveMove 16s linear infinite;
+}
+
+@keyframes hiveMove {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  100% { background-position: 60px 60px, 60px 60px, 60px 60px; }
+} 

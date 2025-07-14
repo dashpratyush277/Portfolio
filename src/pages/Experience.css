@@ -1,0 +1,472 @@
+.experience {
+  padding-top: 100px;
+  min-height: 100vh;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.work-experience,
+.freelance-section,
+.skills-summary {
+  margin-bottom: 4rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subsection-title svg {
+  color: var(--accent-color);
+}
+
+/* Experience Timeline */
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent-color);
+  transform: translateX(-50%);
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.experience-item:nth-child(odd) .experience-card {
+  margin-left: 0;
+  margin-right: 50%;
+  padding-right: 2rem;
+}
+
+.experience-item:nth-child(even) .experience-card {
+  margin-left: 50%;
+  margin-right: 0;
+  padding-left: 2rem;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  border: 4px solid var(--bg-primary);
+  box-shadow: 0 0 0 4px var(--accent-color);
+}
+
+.experience-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.job-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.job-type {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-color);
+}
+
+.job-duration .duration {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.experience-details {
+  margin-bottom: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.detail-item svg {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+.experience-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.achievements h4,
+.technologies h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.achievements li {
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievements li::before {
+  content: '•';
+  color: var(--accent-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.experience-links {
+  margin-top: 1rem;
+}
+
+.company-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.company-link:hover {
+  color: var(--accent-hover);
+  transform: translateX(5px);
+}
+
+/* Freelance Section */
+.freelance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.freelance-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.freelance-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-hover));
+}
+
+.freelance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.freelance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.freelance-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.client {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.freelance-details {
+  margin-bottom: 1rem;
+}
+
+.freelance-details .duration {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.freelance-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.freelance-tech h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-hover);
+  transform: translateX(5px);
+}
+
+/* Skills Summary */
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3 {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-list span {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skill-list span:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.internship-section {
+  margin-bottom: 4rem;
+}
+
+.internship-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1.5px solid var(--border-color);
+  padding: 2rem 2.5rem;
+  max-width: 600px;
+  margin: 0 0 2.5rem 0;
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.internship-card:hover {
+  box-shadow: 0 8px 32px rgba(255,107,53,0.13);
+  transform: translateY(-6px) scale(1.03);
+  border-color: var(--accent-color);
+}
+
+.internship-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.internship-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.internship-role {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-left: 0.7rem;
+}
+
+.internship-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.internship-details {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  padding-left: 1.2rem;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.internship-details li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-timeline::before {
+    left: 20px;
+  }
+
+  .experience-item:nth-child(odd) .experience-card,
+  .experience-item:nth-child(even) .experience-card {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+
+  .experience-item::before {
+    left: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .freelance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .freelance-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr;
+  }
+} 

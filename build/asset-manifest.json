@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.47705baa.css",
+    "main.js": "/Portfolio/static/js/main.b6f67323.js",
+    "static/media/Jazzier-Regular.woff2": "/Portfolio/static/media/Jazzier-Regular.d9b24a181bd04367f606.woff2",
+    "static/media/WhatsApp Image 2025-07-14 at 18.27.53_733f4961.jpg": "/Portfolio/static/media/WhatsApp Image 2025-07-14 at 18.27.53_733f4961.cb26d12f0f42abfb7f15.jpg",
+    "static/media/CosmicJungleExtrude.woff2": "/Portfolio/static/media/CosmicJungleExtrude.2796568ba13abf74eb9c.woff2",
+    "index.html": "/Portfolio/index.html",
+    "main.47705baa.css.map": "/Portfolio/static/css/main.47705baa.css.map",
+    "main.b6f67323.js.map": "/Portfolio/static/js/main.b6f67323.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47705baa.css",
+    "static/js/main.b6f67323.js"
+  ]
+}

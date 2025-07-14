@@ -1,0 +1,37 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--accent-color) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  transition: opacity 0.5s;
+}
+
+.loading-welcome {
+  font-family: 'Cosmic Jungle Extrude', 'Jazzier', 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.25), 0 1px 0 var(--accent-hover);
+  animation: welcomePop 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes welcomePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+} 
